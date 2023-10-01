@@ -1,0 +1,122 @@
+@import "../../assets/_utility.scss";
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    .text-container {
+      h2 {
+        font-size: 46px;
+      }
+      hr {
+        height: 2px;
+        width: 150px;
+        background-color: $dark-red;
+        border: none;
+        margin: 10px 0;
+      }
+      .span {
+        font-size: 42px;
+        color: #fff;
+        display: block;
+        letter-spacing: 1px;
+      }
+      .small {
+        font-size: 42px;
+        color: hwb(0 38% 62%);
+      }
+    }
+    .image-container {
+      width: 550px;
+      animation: image-loading 1s forwards;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+@keyframes image-loading {
+  0% {
+    opacity: 0.2;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    filter: none;
+  }
+}
+// responsive
+@media (max-width: 1280px) {
+  main .wrapper {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 980px) {
+  main .wrapper {
+    padding: 0 50px;
+  }
+  main .wrapper .text-container .small {
+    font-size: 36px;
+  }
+  main .wrapper .text-container .span {
+    font-size: 40px;
+  }
+  main .wrapper .image-container {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  main .wrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 640px) {
+  main .wrapper {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  main .text-container {
+    width: 100%;
+  }
+  main .wrapper .image-container {
+    width: 300px;
+  }
+  main .wrapper .text-container .small {
+    font-size: 32px;
+  }
+  main .wrapper .text-container .span {
+    font-size: 38px;
+  }
+  main .wrapper .text-container .designation {
+    font-size: 10px;
+  }
+}
+@media (max-width: 560px) {
+  main {
+    align-items: start;
+    position: relative;
+    height: calc(100vh - 100px);
+  }
+  main .text-container {
+    padding: 120px 0 0 0;
+    z-index: 22;
+  }
+  main .wrapper .image-container {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+  main .wrapper .text-container .small {
+    font-size: 30px;
+  }
+  main .wrapper .text-container .span {
+    font-size: 34px;
+  }
+}

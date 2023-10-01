@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'Panchang-Light';
+    src: url('./assets/fonts/Panchang-Light.woff2') format('woff2'),
+        url('./assets/fonts/Panchang-Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@font-face {
+    font-family: 'Panchang-Regular';
+    src: url('./assets/fonts/Panchang-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Panchang-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+@font-face {
+    font-family: 'Panchang-Medium';
+    src: url('./assets/fonts/Panchang-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Panchang-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+
+@font-face {
+    font-family: 'Panchang-Semibold';
+    src: url('./assets/fonts/Panchang-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/Panchang-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@font-face {
+    font-family: 'Panchang-Bold';
+    src: url('./assets/fonts/Panchang-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Panchang-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* GT Font */
+
+
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('./assets/fonts/GTWalsheimPro-Medium.woff2') format('woff2'),
+        url('./assets/fonts/GTWalsheimPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('./assets/fonts/GTWalsheimPro-Regular.woff2') format('woff2'),
+        url('./assets/fonts/GTWalsheimPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+:root {
+    --body-color: #080808;
+}
+
+body {
+    font-family: 'Panchang-Regular';
+    background-color: var(--body-color);
+}
+
+.gt-font {
+    font-family: 'GT Walsheim Pro';
+}
+
+.gt-font-bold {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 500;
+}
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(67, 67, 67);
+    outline: 1px solid slategrey;
 }

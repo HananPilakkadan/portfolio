@@ -1,0 +1,95 @@
+@import "../../assets/_utility.scss";
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 44;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 20%;
+      li {
+        // margin-right: 50px;
+        font-size: 12px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &::after {
+          content: "";
+          display: block;
+          width: 20px;
+          height: 20px;
+          opacity: 0;
+          margin: 0 auto;
+          position: absolute;
+          bottom: -16px;
+          border-radius: 50%;
+          left: 50%;
+          transition: 0.2s ease;
+          transform: translate(-50%, -50%);
+          background-color: $dark-red;
+        }
+        &:hover {
+          transform: scale(1.04);
+          color: $dark-red;
+          &::after {
+            width: 8px;
+            height: 8px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    h1 {
+      img {
+        width: 70px;
+        display: block;
+      }
+    }
+  }
+}
+header.navbar.active {
+  animation: Header 0.6s forwards;
+  background: rgb(8, 8, 8);
+  background: linear-gradient(
+    -180deg,
+    rgba(8, 8, 8, 1) 0%,
+    rgba(1, 1, 1, 0.5124551041119573) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+@keyframes Header {
+  from {
+    transform: translateY(-80px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+// responsive
+@media (max-width: 1280px) {
+  header .wrapper ul {
+    width: 32%;
+  }
+}
+@media (max-width: 768px) {
+  header .wrapper h1 img {
+    width: 60px;
+  }
+}
+@media (max-width: 560px) {
+  header .wrapper ul {
+    display: none;
+  }
+}
