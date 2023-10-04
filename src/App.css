@@ -7,6 +7,8 @@
     color: #fff;
 }
 
+/* :root {} */
+
 @font-face {
     font-family: 'Panchang-Light';
     src: url('./assets/fonts/Panchang-Light.woff2') format('woff2'),
@@ -100,6 +102,11 @@ body {
     font-weight: 500;
 }
 
+.gt-font-bold-x {
+    font-family: 'GT Walsheim Pro';
+    font-weight: 600;
+}
+
 /* scroll bar */
 body::-webkit-scrollbar {
     width: 2px;
@@ -112,4 +119,62 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: rgb(67, 67, 67);
     outline: 1px solid slategrey;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.head h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.head hr {
+    height: 2px;
+    width: 100px;
+    background-color: #f36c4f;
+    border: none;
+    margin-left: 10px;
+}
+
+
+/* tilt */
+
+.card {
+    position: relative;
+    height: 50vh;
+    width: 20vw;
+    padding: 40px;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+
+}
+
+.title {
+    position: relative;
+    z-index: 2;
+    transform: translateZ(60px);
+
+}
+
+.credits {
+    font-size: 1.2vh;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    transform: translateZ(20px);
+}
+
+.bg {
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
 }
