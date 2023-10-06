@@ -1,29 +1,26 @@
+import { Assets } from "../assets";
 export const services = [
   {
-    id: 0,
-    icon1: "Web",
-    icon2: "Dev",
+    id: 1,
+    icon: Assets.Code_Icon,
     f_title: "Web",
     l_title: "Development",
   },
   {
-    id: 1,
-    icon1: "UI/",
-    icon2: "UX",
+    id: 2,
+    icon: Assets.Pen_Icon,
     f_title: "UI/UX",
     l_title: "Designing",
   },
   {
-    id: 2,
-    icon1: "Photo",
-    icon2: "Graphy",
+    id: 3,
+    icon: Assets.Cam_Icon,
     f_title: "Photography",
     // l_title: "Designer",
   },
   {
-    id: 3,
-    icon1: "Graphic",
-    icon2: "Design",
+    id: 4,
+    icon: Assets.Graphic_Icon,
     f_title: "Graphic",
     l_title: "Desigining",
   },

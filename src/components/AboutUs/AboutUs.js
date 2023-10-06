@@ -21,8 +21,8 @@ const AboutUs = () => {
       <section id="about">
         <div className="wrapper">
           <div className="head">
-            <h4>About us</h4>
             <hr />
+            <h4>About us</h4>
           </div>
           <div className="container">
             <div className="left-container">

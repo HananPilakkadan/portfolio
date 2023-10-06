@@ -1,6 +1,7 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { services } from "../../utility/content";
+import { Assets } from "../../assets";
 
 import "./Services.scss";
 
@@ -10,8 +11,8 @@ const Services = () => {
       <section id="services">
         <div className="wrapper">
           <div className="head">
-            <h4>Services</h4>
             <hr />
+            <h4>Services</h4>
           </div>
           <div className="content-box">
             <ul className="cards">
@@ -19,22 +20,21 @@ const Services = () => {
                 <Tilt
                   className="card"
                   options={{
-                    reverse: false, // reverse the tilt direction
-                    max: 35, // max tilt rotation (degrees)
-                    perspective: 1600, // Transform perspective, the lower the more extreme the tilt gets.
-                    scale: 1.03, // 2 = 200%, 1.5 = 150%, etc..
-                    speed: 1000, // Speed of the enter/exit transition
-                    transition: ".3s ease", // Set a transition on enter/exit.
-                    axis: null, // What axis should be disabled. Can be X or Y.
-                    reset: true, // If the tilt effect has to be reset on exit.
-                    easing: "cubic-bezier(.03,.98,.52,.99)",
+                    reverse: false,
+                    perspective: 1700,
+                    scale: 1.05,
+                    speed: 1200,
+                    transition: true,
+                    axis: null,
+                    reset: true,
+                    easing: "cubic-bezier(.07,.98,.52,.99)",
+                    glare: true,
+                    maxGlare: 0.4,
                   }}
                 >
-                  <h4 className="gt-font-bold-x title">
-                    {item.icon1}
-                    <br />
-                    {item.icon2}
-                  </h4>
+                  <div className="gt-font-bold-x icon">
+                    <img src={item.icon} alt="" className="no" />
+                  </div>
                   <span className="gt-font-bold">
                     {item.f_title}
                     <br /> {item.l_title}

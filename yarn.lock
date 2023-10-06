@@ -8677,6 +8677,11 @@ raw-body@2.5.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-animated-cursor@^2.10.1:
+  version "2.10.1"
+  resolved "https://registry.npmjs.org/react-animated-cursor/-/react-animated-cursor-2.10.1.tgz"
+  integrity sha512-yT9HMLYXXl4uCJ+Y7rAl1VYZow9veFtLhx8tbOjmNBvielU5LEHmXWclZ72bKZ2M4FBHcdXEEcPsgSp5/FUOng==
+
 react-app-polyfill@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/react-app-polyfill/-/react-app-polyfill-3.0.0.tgz"

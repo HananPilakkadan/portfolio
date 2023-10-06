@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { assets } from "../../assets";
+import { Assets } from "../../assets";
 
 import "./Spotlight.scss";
 import { SplitText } from "./SplitText";
@@ -144,7 +144,7 @@ const Spotlight = () => {
           {/* <span className="designation">Software Developer</span> */}
         </div>
         <div className="image-container">
-          <img src={assets.Spotlight_Image} alt="Spotlight" />
+          <img src={Assets.Spotlight_Image} alt="Spotlight" />
         </div>
       </div>
     </main>

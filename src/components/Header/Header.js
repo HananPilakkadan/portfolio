@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { assets } from "../../assets";
+import { Assets } from "../../assets";
 import { motion } from "framer-motion";
 
 import "./Header.scss";
@@ -33,7 +33,7 @@ const Header = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <img src={assets.Logo} alt="Logo" />
+            <img src={Assets.Logo} alt="Logo" />
           </motion.h1>
           <ul>
             <li>Services</li>
