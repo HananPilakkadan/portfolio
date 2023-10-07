@@ -1,7 +1,6 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { services } from "../../utility/content";
-import { Assets } from "../../assets";
 
 import "./Services.scss";
 
@@ -29,12 +28,14 @@ const Services = () => {
                     reset: true,
                     easing: "cubic-bezier(.07,.98,.52,.99)",
                     glare: true,
-                    maxGlare: 0.4,
+                    maxGlare: 0.4, // Set the maximum glare opacity
                   }}
                 >
-                  <div className="gt-font-bold-x icon">
-                    <img src={item.icon} alt="" className="no" />
-                  </div>
+                  <h4 className="gt-font-bold-x title">
+                    {item.icon1}
+                    <br />
+                    {item.icon2}
+                  </h4>
                   <span className="gt-font-bold">
                     {item.f_title}
                     <br /> {item.l_title}
