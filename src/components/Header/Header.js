@@ -24,7 +24,7 @@ const Header = () => {
       <header className={`navbar ${isScrolled ? "active" : ""}`}>
         <div className="wrapper">
           <ul>
-            <li>Home</li>
+            <li className="active">Home</li>
             <li>About</li>
           </ul>
           <motion.h1

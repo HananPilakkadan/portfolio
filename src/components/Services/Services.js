@@ -12,6 +12,7 @@ const Services = () => {
           <div className="head">
             <hr />
             <h4>Services</h4>
+            <h6>Services</h6>
           </div>
           <div className="content-box">
             <ul className="cards">

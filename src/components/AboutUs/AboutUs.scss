@@ -21,7 +21,7 @@
         span.count {
           font-size: 36px;
           display: block;
-          color: $dark-red;
+          color: $primary-color;
         }
         span.text {
           font-size: 16px;
@@ -56,10 +56,10 @@
         font-size: 46px;
         position: absolute;
         z-index: -1;
-        top: -33px;
+        top: -32px;
         left: -15px;
         opacity: 0.3 !important;
-        background: -webkit-linear-gradient($content, #000000ab);
+        background: -webkit-linear-gradient(#000, #00000000);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -84,6 +84,14 @@
         animation-delay: 0.4s !important;
         animation: textActive 0.6s both;
         opacity: 1;
+      }
+      .button {
+        background: $primary-color;
+        padding: 12px 20px;
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        margin-top: 18px;
       }
     }
   }

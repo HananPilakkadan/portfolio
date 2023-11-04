@@ -8,7 +8,9 @@
     align-items: center;
     flex-wrap: wrap;
     .card {
-      background-image: linear-gradient(to top, #0d0d0d, #161616);
+      border-radius: 50px;
+      background: #e3e3e3;
+      box-shadow: 20px 20px 60px #c1c1c1, -20px -20px 60px #ffffff;
       width: 280px;
       height: 350px;
       border-radius: 30px;
@@ -22,7 +24,7 @@
       &:hover h4 {
         transform: rotate(0) translateY(0) scale(1);
         font-size: 100px;
-        color: rgba(230, 109, 3, 0.358);
+        color: #009e66;
         -webkit-animation: tracking-in-contract-bck-top 1s
           cubic-bezier(0.215, 0.61, 0.355, 1) both;
         animation: tracking-in-contract-bck-top 1s
@@ -43,7 +45,7 @@
         top: -15px;
         opacity: 0.1;
         font-weight: 600;
-        color: #ffffff27;
+        color: $content;
         transition: 0.3s ease;
         transform: rotate(-10deg) translateY(-20px) scale(1.1);
       }
@@ -73,7 +75,7 @@
         display: block;
         text-align: center;
         font-size: 22px;
-        color: $content;
+        color: #000;
       }
       @media (max-width: 560px) {
         span {

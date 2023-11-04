@@ -23,6 +23,7 @@ const AboutUs = () => {
           <div className="head">
             <hr />
             <h4>About us</h4>
+            <h6 className="gt-font-bold">About us</h6>
           </div>
           <div className="container">
             <div className="left-container">
@@ -102,6 +103,9 @@ const AboutUs = () => {
                   If you're looking for a friendly developer to bring your ideas
                   to life, I'm here and ready to collaborate!
                 </InView>
+                <a href="#" className="button">
+                  Download CV
+                </a>
               </div>
             </div>
           </div>

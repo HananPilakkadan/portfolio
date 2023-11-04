@@ -10,10 +10,15 @@ function App() {
       <Suspense fallback={<Loader />}>
         <AnimatedCursor
           innerSize={8}
-          outerSize={8}
+          innerStyle={{ background: "#000" }}
+          outerSize={35}
+          outerStyle={{
+            backgroundColor: "transparent",
+            border: "1px solid #000",
+          }}
           outerAlpha={1}
-          innerScale={0.7}
-          outerScale={5}
+          innerScale={1.5}
+          outerScale={0}
           clickables={[
             "a",
             'input[type="text"]',
